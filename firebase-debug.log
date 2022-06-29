@@ -1,0 +1,86 @@
+[debug] [2022-06-29T09:40:07.546Z] ----------------------------------------------------------------------
+[debug] [2022-06-29T09:40:07.548Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-06-29T09:40:07.548Z] CLI Version:   11.1.0
+[debug] [2022-06-29T09:40:07.548Z] Platform:      win32
+[debug] [2022-06-29T09:40:07.548Z] Node Version:  v16.14.2
+[debug] [2022-06-29T09:40:07.549Z] Time:          Wed Jun 29 2022 15:40:07 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-06-29T09:40:07.549Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-29T09:40:07.606Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-29T09:40:07.606Z] > authorizing via signed-in user (hsomon940@gmail.com)
+[debug] [2022-06-29T09:40:07.607Z] [iam] checking project jobs-hunting for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-29T09:40:07.608Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/jobs-hunting:testIamPermissions [none]
+[debug] [2022-06-29T09:40:07.609Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jobs-hunting:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-29T09:40:10.271Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/jobs-hunting:testIamPermissions 200
+[debug] [2022-06-29T09:40:10.271Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jobs-hunting:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-29T09:40:10.272Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting [none]
+[debug] [2022-06-29T09:40:12.688Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting 200
+[debug] [2022-06-29T09:40:12.689Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting {"projectId":"jobs-hunting","projectNumber":"644199123869","displayName":"jobs-hunting","name":"projects/jobs-hunting","resources":{"hostingSite":"jobs-hunting"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'jobs-hunting'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-29T09:40:12.691Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting [none]
+[debug] [2022-06-29T09:40:16.509Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting 200
+[debug] [2022-06-29T09:40:16.509Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting {"projectId":"jobs-hunting","projectNumber":"644199123869","displayName":"jobs-hunting","name":"projects/jobs-hunting","resources":{"hostingSite":"jobs-hunting"},"state":"ACTIVE"}
+[debug] [2022-06-29T09:40:16.511Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/644199123869/sites/jobs-hunting/versions [none]
+[debug] [2022-06-29T09:40:16.512Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/644199123869/sites/jobs-hunting/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-06-29T09:40:19.702Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/644199123869/sites/jobs-hunting/versions 500
+[debug] [2022-06-29T09:40:19.703Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/644199123869/sites/jobs-hunting/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-06-29T09:40:22.548Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-06-29T09:43:44.786Z] ----------------------------------------------------------------------
+[debug] [2022-06-29T09:43:44.787Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-06-29T09:43:44.788Z] CLI Version:   11.1.0
+[debug] [2022-06-29T09:43:44.788Z] Platform:      win32
+[debug] [2022-06-29T09:43:44.788Z] Node Version:  v16.14.2
+[debug] [2022-06-29T09:43:44.789Z] Time:          Wed Jun 29 2022 15:43:44 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-06-29T09:43:44.789Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-29T09:43:44.860Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-29T09:43:44.861Z] > authorizing via signed-in user (hsomon940@gmail.com)
+[debug] [2022-06-29T09:43:44.861Z] [iam] checking project jobs-hunting for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-29T09:43:44.864Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/jobs-hunting:testIamPermissions [none]
+[debug] [2022-06-29T09:43:44.864Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jobs-hunting:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-29T09:43:48.191Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/jobs-hunting:testIamPermissions 200
+[debug] [2022-06-29T09:43:48.192Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jobs-hunting:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-29T09:43:48.193Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting [none]
+[debug] [2022-06-29T09:43:49.220Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting 200
+[debug] [2022-06-29T09:43:49.220Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting {"projectId":"jobs-hunting","projectNumber":"644199123869","displayName":"jobs-hunting","name":"projects/jobs-hunting","resources":{"hostingSite":"jobs-hunting"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'jobs-hunting'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-29T09:43:49.222Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting [none]
+[debug] [2022-06-29T09:43:50.965Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting 200
+[debug] [2022-06-29T09:43:50.965Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jobs-hunting {"projectId":"jobs-hunting","projectNumber":"644199123869","displayName":"jobs-hunting","name":"projects/jobs-hunting","resources":{"hostingSite":"jobs-hunting"},"state":"ACTIVE"}
+[debug] [2022-06-29T09:43:50.968Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/644199123869/sites/jobs-hunting/versions [none]
+[debug] [2022-06-29T09:43:50.968Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/644199123869/sites/jobs-hunting/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-06-29T09:43:54.083Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/644199123869/sites/jobs-hunting/versions 500
+[debug] [2022-06-29T09:43:54.083Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/644199123869/sites/jobs-hunting/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-06-29T09:43:59.351Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}

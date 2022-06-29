@@ -9,7 +9,7 @@ const User = ({user}) => {
       
 {
   user && <>
-   <div className=" card w-full h-[400px] bg-base-100 shadow-2xl ">
+   <div className=" card w-full h-[400px] shadow-2xl bg-accent">
       
    <figure className="px-10 pt-10">
         <img src={picture.large} alt="Shoes" className="rounded-xl" />

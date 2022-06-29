@@ -34,7 +34,7 @@ const Navbar = () => {
             
             </div>
                 
-            <div className="navbar-center ml-10 mr-auto hidden items-center lg:flex text-xl mb-4">
+            <div className="navbar-center ml-10 mr-auto hidden items-center lg:flex text-xl mb-4 mt-4 ">
                 <ul className="menu menu-horizontal p-0 ">
                 {menuItems}
                 </ul>

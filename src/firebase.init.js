@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDxvLEaOE4-pL-TBjsTLMJQK_3BR5xiF0Q",
-  authDomain: "jobs-hunting.firebaseapp.com",
-  projectId: "jobs-hunting",
-  storageBucket: "jobs-hunting.appspot.com",
-  messagingSenderId: "644199123869",
-  appId: "1:644199123869:web:aafa55d491c9efb4277d74"
+  apiKey: "AIzaSyA4_d_-pfZpfwEMDHGm_hfq9ybVdQz_dOE",
+  authDomain: "jobs-work.firebaseapp.com",
+  projectId: "jobs-work",
+  storageBucket: "jobs-work.appspot.com",
+  messagingSenderId: "338647278233",
+  appId: "1:338647278233:web:e3ac9c83fddc47ad1c8e08"
 };
 
 // Initialize Firebase

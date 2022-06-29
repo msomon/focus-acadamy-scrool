@@ -13,6 +13,9 @@ function App() {
       <Navbar></Navbar>
       <Routes>
 
+    <Route path='/' element={<RequireAuth>
+      <Users/>
+    </RequireAuth>}></Route>
     <Route path='/users' element={<RequireAuth>
       <Users/>
     </RequireAuth>}></Route>
